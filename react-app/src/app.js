@@ -5,7 +5,8 @@ const App = ()=>{
     return(
         <div>
             <h1>Hello world</h1>
-            <h3>Personal website that will soon host projects I have completed</h3>
+            <h3>About Me</h3>
+            <p>My name is Emily and I am from Nebraska.</p>
         </div>
     )
 }
