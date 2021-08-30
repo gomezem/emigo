@@ -1,16 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import VerticalTabs from './navbar.js';
+// import logo from './logo.svg';
+import './App.css';
+// import About from './components/About';
+import Navbar from './components/Navbar';
+// import Projects from './components/Projects';
+// import Art from './components/Art';
+// import Contact from './components/Contact';
 
-const App = ()=>{
-    return(
-        <div>
-            <VerticalTabs></VerticalTabs>
-            <h1>Hello world</h1>
-            <h3>About Me</h3>
-            <p>My name is Emily and I am from Nebraska.</p>
-        </div>
-    )
+function App() {
+  return (
+    <div className="App">
+      <Navbar/>
+      {/* <About/>
+      <Projects/>
+      <Art/>
+      <Contact/> */}
+    </div>
+  );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"))
+export default App;
