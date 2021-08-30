@@ -1,53 +1,81 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import ImageList from "@material-ui/core/ImageList";
+import ImageListItem from "@material-ui/core/ImageListItem";
 
-import soummy from '../img/soummy.jpg';
+import soummy from "../img/soummy.jpg";
+import rose from "../img/pink_rose.jpg";
+import hokusai from "../img/hokusai.jpg";
+import madonna from "../img/madonna-drawing.jpg";
+import delft from "../img/delft.jpg";
+import mixed from "../img/mixed-media.jpg";
+import grandma from "../img/grandma.jpg";
+import bottles from "../img/bottles_pencil.jpg";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    backgroundColor: theme.palette.background.paper,
   },
-  media: {
-    height: 140,
+}));
+
+const imageLayout = [
+  {
+    img: soummy,
+    title: "Charcoal Portrait",
+    cols: 1,
   },
-});
+  {
+    img: bottles,
+    title: "Bottles Drawing",
+    cols: 1,
+  },
+  {
+    img: grandma,
+    title: "Grandmother Drawing",
+    cols: 1,
+  },
+  {
+    img: rose,
+    title: "Rose Oil Painting",
+    cols: 3,
+  },
+  {
+    img: hokusai,
+    title: "Hokusai Color Theory",
+    cols: 3,
+  },
+  {
+    img: madonna,
+    title: "Madonna Drawing",
+    cols: 1,
+  },
+  {
+    img: delft,
+    title: "Madonna Drawing",
+    cols: 2,
+  },
+  {
+    img: mixed,
+    title: "Mixed Media",
+    cols: 3,
+  },
+];
 
 export default function Art() {
   const classes = useStyles();
 
   return (
-    // <div>
-        <Card className={classes.root}>
-        <CardActionArea>
-            <CardMedia
-            className={classes.media}
-            image={soummy}
-            title="Charcoal Portrait"
-            />
-            <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-                Charcoal Portrait
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-                2019
-            </Typography>
-            </CardContent>
-        </CardActionArea>
-        <CardActions>
-            <Button size="small" color="primary">
-            Share
-            </Button>
-            <Button size="small" color="primary">
-            Learn More
-            </Button>
-        </CardActions>
-        </Card>
-      );
+    <div className={classes.root}>
+      <ImageList rowHeight={700} className={classes.imageList} cols={3}>
+        {imageLayout.map((item) => (
+          <ImageListItem key={item.img} cols={item.cols || 1}>
+            <img src={item.img} alt={item.title} />
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </div>
+  );
 }
