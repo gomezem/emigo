@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/emigo/static/css/main.5739ad41.chunk.css",
+    "main.js": "/emigo/static/js/main.0711ba17.chunk.js",
+    "main.js.map": "/emigo/static/js/main.0711ba17.chunk.js.map",
+    "runtime-main.js": "/emigo/static/js/runtime-main.686c106a.js",
+    "runtime-main.js.map": "/emigo/static/js/runtime-main.686c106a.js.map",
+    "static/js/2.af1ef511.chunk.js": "/emigo/static/js/2.af1ef511.chunk.js",
+    "static/js/2.af1ef511.chunk.js.map": "/emigo/static/js/2.af1ef511.chunk.js.map",
+    "static/js/3.ff8ee230.chunk.js": "/emigo/static/js/3.ff8ee230.chunk.js",
+    "static/js/3.ff8ee230.chunk.js.map": "/emigo/static/js/3.ff8ee230.chunk.js.map",
+    "index.html": "/emigo/index.html",
+    "static/css/main.5739ad41.chunk.css.map": "/emigo/static/css/main.5739ad41.chunk.css.map",
+    "static/js/2.af1ef511.chunk.js.LICENSE.txt": "/emigo/static/js/2.af1ef511.chunk.js.LICENSE.txt",
+    "static/media/bottles_pencil.b15c52c2.jpg": "/emigo/static/media/bottles_pencil.b15c52c2.jpg",
+    "static/media/delft.169c0129.jpg": "/emigo/static/media/delft.169c0129.jpg",
+    "static/media/grandma.e3e62f0e.jpg": "/emigo/static/media/grandma.e3e62f0e.jpg",
+    "static/media/hokusai.58b34dc4.jpg": "/emigo/static/media/hokusai.58b34dc4.jpg",
+    "static/media/madonna-drawing.5c6c9924.jpg": "/emigo/static/media/madonna-drawing.5c6c9924.jpg",
+    "static/media/mixed-media.c200d67e.jpg": "/emigo/static/media/mixed-media.c200d67e.jpg",
+    "static/media/pink_rose.5bc2951c.jpg": "/emigo/static/media/pink_rose.5bc2951c.jpg",
+    "static/media/profile.bcfe50e9.jpg": "/emigo/static/media/profile.bcfe50e9.jpg",
+    "static/media/snake-game.221047de.jpg": "/emigo/static/media/snake-game.221047de.jpg",
+    "static/media/soummy.20bed541.jpg": "/emigo/static/media/soummy.20bed541.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.686c106a.js",
+    "static/js/2.af1ef511.chunk.js",
+    "static/css/main.5739ad41.chunk.css",
+    "static/js/main.0711ba17.chunk.js"
+  ]
+}
