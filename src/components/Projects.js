@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 import snake from '../img/snake-game.jpg';
-
+import Dialog from './Dialog';
 
 const useStyles = makeStyles({
   root: {
@@ -42,12 +42,7 @@ export default function Projects() {
             </CardContent>
         </CardActionArea>
         <CardActions>
-            <Button size="small" color="primary">
-            Share
-            </Button>
-            <Button size="small" color="primary">
-            Learn More
-            </Button>
+            <Dialog></Dialog>
         </CardActions>
         </Card>
         </div>

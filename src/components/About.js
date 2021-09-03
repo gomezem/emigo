@@ -20,11 +20,11 @@ export default function About() {
 
   return (
     <div className={classes}>
-      <Grid container spacie={1}>
-        <Grid item xs={7}>
-          <img src={profile} alt="" width="800" />
+      <Grid container>
+        <Grid item xs>
+          <img src={profile} alt="" width="800"/>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs>
           <p>
             My name is Emily Gomez and I'm a recent graduate with a Bachelors of
             Science in Computer Science from the University of Nebraska - Omaha
